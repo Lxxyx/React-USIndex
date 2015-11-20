@@ -29,11 +29,19 @@ var CardHeader = React.createClass({
 	}
 })
 
+var Name = React.createClass({
+	render: function () {
+		return (
+			<span>{this.props.name}</span>
+		);
+	}
+})
+
 var BirthdayPeople = React.createClass({
 	render: function () {
 		var birthdayName = this.props.birpeople.map(function (people) {
 			return (
-				<span>{people}</span>
+				<Name name={people}/>
 			);
 		});
 		return (
