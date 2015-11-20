@@ -29,7 +29,41 @@ var CardHeader = React.createClass({
 	}
 })
 
+var BirthdayPeople = React.createClass({
+	render: function () {
+		var birthdayName = this.props.birpeople.map(function (people) {
+			return (
+				<span>{people}</span>
+			);
+		});
+		return (
+			{birthdayName}
+		);
+	}
+});
+
+var BirthdayPic = React.createClass({
+	render: function () {
+		return (
+			<img src="img/Birthday-Cake-128.png" alt="Birthday-Cake"/>
+		);
+	}
+})
+
+var BirthdayBody = React.createClass({
+	render: function () {
+		return (
+			<div className="birthday-name">
+				<BirthdayPeople birpeople={["刘子健","苏俊飞","宋成成"]}/>
+				<BirthdayPic/>
+			</div>
+		);
+	}
+})
 ReactDOM.render(
-	<CardHeader/>,
+	<div className="card birthday">
+		<CardHeader/>
+		<BirthdayBody/>
+	</div>,
 	document.getElementById('container')
 )
