@@ -1,0 +1,314 @@
+body {
+	font-family:"Microsoft YaHei";
+	height: 100%;
+	background: #f7f9fa;
+}
+/*可复用的CSS组件*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.link {
+	color: #0088cc;
+	text-decoration: none;
+}
+.card {
+	background:#ffffff;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.card-header {
+	height:47px;
+	border-bottom:1px solid #E8E8E8;
+}
+.card-title-h1 {
+	display: inline-block;
+	padding-top:11px;
+	font-size: 20px;
+	margin-left: 20px;
+	color: #3F3F3F;
+}
+.card-title-h2 {
+	display: inline-block;
+	padding-top:18px;
+	font-size: 16px;
+	margin-left: 20px;
+	color: #3F3F3F;
+}
+.card-title-link {
+	display: inline-block;
+	padding-top:14px;
+	font-size: 15px;
+	margin-right: 20px;
+}
+.card-title-time {
+	color: #949494;
+	padding-top:19px;
+	font-size: 15px;
+	margin-right: 20px;
+}
+/*主体部分*/
+.main {
+	width: 1080px;
+	height: auto!important;
+	height: 822px;
+	min-height: 822px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+
+/*左边的生日部分*/
+.birthday {
+	width:300px;
+	height: 94px;
+}
+.birthday-name {
+	padding-top: 11px;
+}
+.birthday-name span span {
+	display: inline-block;
+	font-size: 13px;
+	color: #fbbd3d;
+	margin-left: 20px;
+}
+/*左边的公告部分*/
+.notice {
+	width: 300px;
+	height:555px;
+}
+.notice-preview {
+	padding-bottom: 20px;
+	border: 1px solid #E8E8E8;
+	cursor: pointer;
+}
+.notice-preview article p {
+	margin-left: 20px;
+	margin-right: 20px;
+	display: block;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	text-indent: 2em;
+	font-size: 15px;
+	color: #949494;
+	line-height: 1.7em;
+}
+.notice-all {
+	font-size: 13px;
+	margin-left:20px;
+}
+.notice-more {
+	display: inline-block;
+	color: #949494;
+	font-size: 15px;
+	padding-top: 7px;
+}
+.releaseNotice {
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+/*中间部分*/
+.dynamic {
+	width: 490px;
+}
+/*button基础组件*/
+.button {
+	display: inline-block;
+	font-size: 13px;
+	color: white;
+	border: none;
+	outline: none;
+}
+/*发起话题*/
+.releaseDynamic {
+	background: #96bf48;
+	border-radius: 5px;
+	width: 80px;
+	height: 25px;
+	margin-left: 10px;
+}
+/*全部*/
+.allDynamic {
+	background: #66ccff;
+	border-top-left-radius: 13px;
+	border-bottom-left-radius:13px;
+	width: 70px;
+	height: 25px;
+	border: 1px solid #66ccff;
+	margin-left: 36px;
+}
+/*与我相关*/
+.myDynamic {
+	background: #FFFFFF;
+	color: #66ccff;
+	border-top-right-radius:13px;
+	border-bottom-right-radius: 13px;
+	width: 70px;
+	height: 25px;
+	border: 1px solid #66ccff;
+	margin-left: -5px;
+	margin-right: 43px;
+}
+/*四个方块所在区域*/
+.view-danamic {
+	height: 622px;
+	background:#ffffff;
+	border-radius: 5px;
+}
+/*卡片主题设置*/
+.dynamic-card {
+	margin-top: 18px;
+	margin-left: 12px;
+	margin-bottom: 12px;
+	background:#ffffff;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	width: 218px;
+	float: left;
+	display: inline-block;
+}
+.dynamic-card-header {
+	height: 30px;
+	padding-top: 6px;
+	border-bottom:1px solid #E8E8E8;
+}
+.dynamic-card-title {
+	display: inline-block;
+	font-size: 15px;
+	margin-left: 9px;
+	color: #3F3F3F;
+}
+/*中间卡片的照片*/
+.dynamic-card-photo {
+	border-radius: 50px;
+	margin-right: 10px;
+	float: right;
+	vertical-align: middle;
+}
+.dynamic-card-body {
+	height: 237px;
+}
+.dynamic-card-body article p {
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 0!important;
+	padding-top: 17px;
+	margin-bottom: 0!important;
+	display: block;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	text-indent: 2em;
+	font-size: 13px;
+	color: #949494;
+	line-height: 2em;
+}
+.dynamic-message {
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 8px;
+	padding-right: 2px;
+	/*vertical-align: middle;*/
+	font-size: 14px;
+	color: #949494;
+	vertical-align: bottom;
+}
+.dynamic-card-body ul {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	padding-top: 14px;
+	padding-right: 8px;
+}
+.dynamic-card-body li {
+	display: inline-block;
+	padding-left: 3px;
+}
+.dynamic-card-time {
+	font-size: 14px;
+	color: #949494;
+	padding-top:19px;
+	margin-right: 8px;
+}
+.tags {
+	display: inline-block;
+	font-size: 14px;
+	
+	width: 47px;
+	height: 21px;
+	border-radius: 11px;
+	text-align: center;
+}
+.dynamic-tag1 {
+	color: white;
+	background: #6bcd52;
+	margin-top: 20px;
+	margin-left: 8px;
+}
+.dynamic-tag2 {
+	background: #ffffff;
+	color: #6dcd4b;
+	border: 1px solid #6dcd4b;
+}
+
+/*个人中心部分*/
+.right-card {
+	background:#ffffff;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.pc {
+	width:211px;
+	height: 669px;
+}
+.pc-header {
+	
+}
+.pc-header img {
+	padding-top: 30px;
+	padding-left: 76px;
+}
+.pc-header p {
+	color: #3F3F3F;
+	text-align: center;
+}
+/*底部家园志，游戏+等部分*/
+.write {
+	height: 56px;
+	width:724px ;
+	margin-top: 1px!important;
+	background: #FFFFFF;
+}
+
+.write img {
+	vertical-align: middle;
+	display: inline-block;
+}
+.write div {
+	/*text-decoration: none;*/
+	font-size: 14px;
+	vertical-align: bottom;
+	display: inline-block;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.rizhi {
+	margin-left: 75px;
+	color: #6ecb53;
+}
+.photo {
+	margin-left: 170px;
+	color: #f8a741;
+}
+.game {
+	margin-left: 170px;
+	color: #d189e5;
+}
+

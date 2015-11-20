@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>US</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/usindex.css">
+</head>
+<body>
+	<div class="main">
+		<div class="fl" data-field = "left">
+			<div class="card birthday">
+				<div class="card-header">
+					<span class="card-title-h1">十一月六日</span>
+					<a href="#" class="fr link card-title-link">送上祝福</a>
+				</div>
+				<div class="birthday-name" id="birthday">
+					<span v-for = 'ele in birthday_people'>
+						<span>ele.</span>
+					</span>
+					<img src="img/Birthday-Cake-128.png" alt="cake" class="fr" style="margin-right: 20px;">
+				</div>
+			</div>
+			<div class="card notice" id="notice">
+				<div class="card-header">
+					<span class="card-title-h1">US公告</span>
+					<a href="#" class="fr link card-title-link">编辑</a>
+				</div>
+				<div class="notice-preview" v-for = "notice in notice_list">
+					<span class="card-title-h2">{{notice.title}}</span>
+					<span class="fr card-title-time"></span>
+					<article>
+						<p>
+							{{notice.content}}
+						</p>
+						<a href="#" class="link fl notice-all">全部内容...</a>
+						<div style="clear: both;"></div>
+					</article>
+				</div>
+				<div>
+					<p style="text-align: center;"><a href="#" class="link notice-more">查看更多……</a></p>
+				</div>
+			</div>
+			<div class="card">
+				<p style="text-align: center;">
+					<img src="img/releaseNotice.png" style="vertical-align: middle;"/>
+					<a href="#" class="link releaseNotice" id="releaseNotice">发布公告</a>
+				</p>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="fl" data-field = "middle">
+			<div class="card dynamic">
+				<div class="card-header">
+					<span class="card-title-h1">动态</span>
+					<button class="button releaseDynamic">发起话题</button>
+					<button class="button allDynamic">全部</button>
+					<button class="button myDynamic">与我相关</button>
+					<a href="#" class="fr link card-title-link" style="padding-top: 17px!important;">编辑</a>
+				</div>
+				<!--八个dynamic-card作测试，overflow：auto做滚动条-->
+				<div class="view-danamic" style="overflow: auto;">
+					<div class="dynamic-card">
+						<div class="dynamic-card-header">
+							<span class="dynamic-card-title">NFC技术应用实例</span>
+							<img src="img/thumb.png" class="dynamic-card-photo"/>
+						</div>
+						<div class="dynamic-card-body">
+							<article>
+								<p>这个技术由非接触式射频识别RFID演变而来，
+									由飞利浦半导体（现恩智浦半导体公司）、
+									诺基亚和索尼sony...
+								</p>
+							</article>
+							<img src="img/message.png " class="dynamic-message"/>
+							<span class="dynamic-message">54</span>
+							<ul class="fr" style="clear: both;">
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+							</ul>
+							<div style="clear: both;"></div>
+							<span class="tags dynamic-tag1">技术</span>
+							<span class="tags dynamic-tag2">技术</span>
+							<span class="fr dynamic-card-time" style="display: inline-block;" >10月2日</span>
+						</div>
+					</div>
+					<div class="dynamic-card">
+						<div class="dynamic-card-header">
+							<span class="dynamic-card-title">NFC技术应用实例</span>
+							<img src="img/thumb.png" class="dynamic-card-photo"/>
+						</div>
+						<div class="dynamic-card-body">
+							<article>
+								<p>这个技术由非接触式射频识别RFID演变而来，
+									由飞利浦半导体（现恩智浦半导体公司）、
+									诺基亚和索尼sony...
+								</p>
+							</article>
+							<img src="img/message.png " class="dynamic-message"/>
+							<span class="dynamic-message">54</span>
+							<ul class="fr" style="clear: both;">
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+							</ul>
+							<div style="clear: both;"></div>
+							<span class="tags dynamic-tag1">技术</span>
+							<span class="tags dynamic-tag2">技术</span>
+							<span class="fr dynamic-card-time" style="display: inline-block;" >10月2日</span>
+						</div>
+					</div>
+					<div class="dynamic-card">
+						<div class="dynamic-card-header">
+							<span class="dynamic-card-title">NFC技术应用实例</span>
+							<img src="img/thumb.png" class="dynamic-card-photo"/>
+						</div>
+						<div class="dynamic-card-body">
+							<article>
+								<p>这个技术由非接触式射频识别RFID演变而来，
+									由飞利浦半导体（现恩智浦半导体公司）、
+									诺基亚和索尼sony...
+								</p>
+							</article>
+							<img src="img/message.png " class="dynamic-message"/>
+							<span class="dynamic-message">54</span>
+							<ul class="fr" style="clear: both;">
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+							</ul>
+							<div style="clear: both;"></div>
+							<span class="tags dynamic-tag1">技术</span>
+							<span class="tags dynamic-tag2">技术</span>
+							<span class="fr dynamic-card-time" style="display: inline-block;" >10月2日</span>
+						</div>
+					</div>
+					<div class="dynamic-card">
+						<div class="dynamic-card-header">
+							<span class="dynamic-card-title">NFC技术应用实例</span>
+							<img src="img/thumb.png" class="dynamic-card-photo"/>
+						</div>
+						<div class="dynamic-card-body">
+							<article>
+								<p>这个技术由非接触式射频识别RFID演变而来，
+									由飞利浦半导体（现恩智浦半导体公司）、
+									诺基亚和索尼sony...
+								</p>
+							</article>
+							<img src="img/message.png " class="dynamic-message"/>
+							<span class="dynamic-message">54</span>
+							<ul class="fr" style="clear: both;">
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+							</ul>
+							<div style="clear: both;"></div>
+							<span class="tags dynamic-tag1">技术</span>
+							<span class="tags dynamic-tag2">技术</span>
+							<span class="fr dynamic-card-time" style="display: inline-block;" >10月2日</span>
+						</div>
+					</div>
+					<div class="dynamic-card">
+						<div class="dynamic-card-header">
+							<span class="dynamic-card-title">NFC技术应用实例</span>
+							<img src="img/thumb.png" class="dynamic-card-photo"/>
+						</div>
+						<div class="dynamic-card-body">
+							<article>
+								<p>这个技术由非接触式射频识别RFID演变而来，
+									由飞利浦半导体（现恩智浦半导体公司）、
+									诺基亚和索尼sony...
+								</p>
+							</article>
+							<img src="img/message.png " class="dynamic-message"/>
+							<span class="dynamic-message">54</span>
+							<ul class="fr" style="clear: both;">
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+							</ul>
+							<div style="clear: both;"></div>
+							<span class="tags dynamic-tag1">技术</span>
+							<span class="tags dynamic-tag2">技术</span>
+							<span class="fr dynamic-card-time" style="display: inline-block;" >10月2日</span>
+						</div>
+					</div>
+					<div class="dynamic-card">
+						<div class="dynamic-card-header">
+							<span class="dynamic-card-title">NFC技术应用实例</span>
+							<img src="img/thumb.png" class="dynamic-card-photo"/>
+						</div>
+						<div class="dynamic-card-body">
+							<article>
+								<p>这个技术由非接触式射频识别RFID演变而来，
+									由飞利浦半导体（现恩智浦半导体公司）、
+									诺基亚和索尼sony...
+								</p>
+							</article>
+							<img src="img/message.png " class="dynamic-message"/>
+							<span class="dynamic-message">54</span>
+							<ul class="fr" style="clear: both;">
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+							</ul>
+							<div style="clear: both;"></div>
+							<span class="tags dynamic-tag1">技术</span>
+							<span class="tags dynamic-tag2">技术</span>
+							<span class="fr dynamic-card-time" style="display: inline-block;" >10月2日</span>
+						</div>
+					</div>
+					<div class="dynamic-card">
+						<div class="dynamic-card-header">
+							<span class="dynamic-card-title">NFC技术应用实例</span>
+							<img src="img/thumb.png" class="dynamic-card-photo"/>
+						</div>
+						<div class="dynamic-card-body">
+							<article>
+								<p>这个技术由非接触式射频识别RFID演变而来，
+									由飞利浦半导体（现恩智浦半导体公司）、
+									诺基亚和索尼sony...
+								</p>
+							</article>
+							<img src="img/message.png " class="dynamic-message"/>
+							<span class="dynamic-message">54</span>
+							<ul class="fr" style="clear: both;">
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+							</ul>
+							<div style="clear: both;"></div>
+							<span class="tags dynamic-tag1">技术</span>
+							<span class="tags dynamic-tag2">技术</span>
+							<span class="fr dynamic-card-time" style="display: inline-block;" >10月2日</span>
+						</div>
+					</div>
+					<div class="dynamic-card">
+						<div class="dynamic-card-header">
+							<span class="dynamic-card-title">NFC技术应用实例</span>
+							<img src="img/thumb.png" class="dynamic-card-photo"/>
+						</div>
+						<div class="dynamic-card-body">
+							<article>
+								<p>这个技术由非接触式射频识别RFID演变而来，
+									由飞利浦半导体（现恩智浦半导体公司）、
+									诺基亚和索尼sony...
+								</p>
+							</article>
+							<img src="img/message.png " class="dynamic-message"/>
+							<span class="dynamic-message">54</span>
+							<ul class="fr" style="clear: both;">
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+								<li><img src="img/thumb2.png"/></li>
+							</ul>
+							<div style="clear: both;"></div>
+							<span class="tags dynamic-tag1">技术</span>
+							<span class="tags dynamic-tag2">技术</span>
+							<span class="fr dynamic-card-time" style="display: inline-block;" >10月2日</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<div class="card write"></div>-->
+		</div>
+		<div class="fl" data-field = "right">
+			<div class="card pc">
+				<div class="pc-header">
+					<img src="img/bigthumb.png"/>
+					<p>Angela Aki</p>
+					<p>设计部</p>
+				</div>
+			</div>
+		</div>
+		<div class="card write fl">
+			<div class="rizhi" >
+				<img src="img/rizhi.png"/>
+				<span>家园志</span>
+			</div>
+			<div class="photo">
+				<img src="img/photo.png"/>
+				<span style="vertical-align: bottom;">照片墙</span>
+			</div>
+			<div class="game">
+				<img src="img/game.png"/>
+				<span style="vertical-align: middle;">游戏+</span>
+			</div>
+		</div>
+	</div>
+	<script src="res.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/usindex.js"></script>
+</body>
+</html>
