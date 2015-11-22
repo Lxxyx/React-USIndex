@@ -181,7 +181,7 @@ var NoticeRelease = React.createClass({
 			</p>
 		);
 	}
-})
+});
 //动态发表
 
 
@@ -270,6 +270,7 @@ var WritePhotoWall = React.createClass({
 		);
 	}
 });
+
 
 var WriteGame = React.createClass({
 	render: function () {
